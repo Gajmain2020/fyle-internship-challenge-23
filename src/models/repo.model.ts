@@ -6,4 +6,5 @@ export interface Repo {
   html_url: string;
   topics: string[];
   stargazers_count: number;
+  language: string;
 }

@@ -19,8 +19,6 @@ export class ApiService {
       .pipe(catchError(this.handleError));
   }
 
-  // implement getRepos method by referring to the documentation. Add proper types for the return type and params 
-  // implement getRepos method by referring to the documentation. Add proper types for the return type and params
   getRepos(
     username: string,
     page: number = 1,

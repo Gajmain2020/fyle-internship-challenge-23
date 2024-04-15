@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { Repo } from 'src/models/repo.model';
 
+
 @Component({
   selector: 'app-repo-card',
   standalone: true,

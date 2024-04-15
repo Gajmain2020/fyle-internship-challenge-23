@@ -7,11 +7,11 @@
   </div>
 
   <div class="px-4 py-2 bg-neutral-800">
-    <div *ngIf="repo.topics.length > 0">
+    <div>
       <span
         *ngFor="let topic of repo.topics.slice(0, 2)"
         class="inline-block bg-neutral-700 rounded-full px-3 py-1 text-sm font-semibold text-neutral-200 mr-2 mb-2"
-        >{{ topic }}</span
+        >{{ repo.language }}</span
       >
     </div>
     <span
