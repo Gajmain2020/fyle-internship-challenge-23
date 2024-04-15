@@ -1,43 +1,33 @@
-# Fyle Frontend Challenge
+# visit
 
-## Who is this for?
+https://fyle-internship-challenge-23-sand.vercel.app/
 
-This challenge is meant for candidates who wish to intern at Fyle and work with our engineering team. The candidate should be able to commit to at least 6 months of dedicated time for internship.
+# Submission for Fyle Frontend Challenge
 
-## Why work at Fyle?
+## Assumptions
 
-Fyle is a fast-growing Expense Management SaaS product. We are ~40 strong engineering team at the moment. 
+No extra assumptions were made. The challenge is completed according to the instructions.
 
-We are an extremely transparent organization. Check out our [careers page](https://careers.fylehq.com) that will give you a glimpse of what it is like to work at Fyle. Also, check out our Glassdoor reviews [here](https://www.glassdoor.co.in/Reviews/Fyle-Reviews-E1723235.htm). You can read stories from our teammates [here](https://stories.fylehq.com).
+## Methods Implemented in API service
 
-## Challenge outline
+There are two methods that are implemented in API service.
 
-This challenge involves implementing application using github api. 
+### 1. getUser()
 
-The services that you need to use are already implemented - check out ApiService.
+This methods takes one string argument i.e. github username, and returns all the public data about user such as name, bio, location, twitter handle etc.
 
-You can see details of this challenge [here](https://fyleuniverse.notion.site/fyleuniverse/Fyle-Frontend-development-challenge-cb5085e5e0864e769e7b98c694400aaa)
+### 2. getRepos()
 
-__Note__ - This challenge is in angular. We work on angular frameworks & after you join we expect the same from you. Hence it is required to complete this assignement in angular itself.
+This methods takes one string argument i.e. github username and one number argument i.e. perpage (repositories to display per page. By default: 10) , and returns an array of objects in which each object contains specified number of repositories data.
 
-## What happens next?
+## Testing
 
-You will hear back within 48 hours from us via email.
+All the test cases can be run using "ng test" command.
 
-## Installation
+Test can also be run using following steps:
 
-1. Fork this repository to your github account.
-2. Clone the forked repository and proceed with steps mentioned below.
+> Step 1: Clone the repository (`https://github.com/Gajmain2020/fyle-internship-challenge-23.git`).
 
-### Install requirements
-* Install angular cli [Ref](https://angular.io/cli)
-* `npm install` in this repository 
+> Step 2: Install all dependencies using `npm install` command.
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
-
-## Further help
-
-Visit the [Angular Documentation](https://angular.io/guide/styleguide) to learn more.
-Styling is to be strictly done with [Tailwind](https://tailwindcss.com/docs/installation).
+> Step 2: Run `npm test` command to test all the tests.
